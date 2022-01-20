@@ -1,0 +1,7 @@
+@font-face{
+    font-family: "night";
+    font-display: fallback;
+    src:url("./night.eot")fomat("truetype"), url("./night.ttf") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }

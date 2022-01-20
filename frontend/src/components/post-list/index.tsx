@@ -1,6 +1,10 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import Item from './item';
+import Item from './Item';
+import Statebar from './Statebar';
+import Tab from './Tab';
+import Date from './Date';
+
 const data = [
   {
     title: '복터 같이 갈 사람?',
@@ -39,22 +43,30 @@ const data = [
     totalPeople: 4,
   },
 ];
-
-const mainContainer = css`
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-
+const background = css`
+  background-image: url('https://user-images.githubusercontent.com/84161508/150076714-aa5b917f-919c-4df3-9d73-affb2accb44f.png'); //이거 어캐하냐~!~!
+  background-size: 100vw 100%;
+`;
+const listPage = css`
   width: 100vw;
   height: 100vh;
+  margin: -10px auto;
+  max-width: 1200px;
 `;
 
 export default function PostList() {
   return (
-    <div css={mainContainer}>
-      {data.map((item) => (
-        <Item item={item} />
-      ))}
+    <div css={background}>
+      <div css={listPage}>
+        <div>
+          <Statebar />
+          <Tab />
+          <Date />
+          {data.map((item) => (
+            <Item item={item} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
