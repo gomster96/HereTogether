@@ -45,13 +45,16 @@ const data = [
 ];
 const background = css`
   background-image: url('https://user-images.githubusercontent.com/84161508/150076714-aa5b917f-919c-4df3-9d73-affb2accb44f.png'); //이거 어캐하냐~!~!
-  background-size: 100vw 100%;
+  background-size: 100vw 100vh;
+  // background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다.
 `;
 const listPage = css`
-  width: 100vw;
-  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(10px, 1fr)) 65vh minmax(30px, 1fr);
+  grid-template-columns: repeat(1, minmax(30px, 1fr));
+  height: auto;
   margin: -10px auto;
-  max-width: 1200px;
+  max-width: 1000px;
 `;
 
 export default function PostList() {

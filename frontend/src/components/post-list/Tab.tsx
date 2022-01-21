@@ -6,21 +6,6 @@ import Box from '@mui/material/Box';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@mui/material/styles';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: 'rgb(256,256,256)',
-    },
-    secondary: {
-      main: 'rgb(163, 163, 163)',
-    },
-  },
-  typography: {
-    fontFamily: 'Raleway, Arial',
-    fontSize: 30,
-  },
-});
-
 export default function TabStyle() {
   const [value, setValue] = useState('one');
 
@@ -37,20 +22,34 @@ export default function TabStyle() {
           textColor="primary"
           indicatorColor="primary"
           sx={{
-            marginTop: '5%',
+            marginTop: '1vh',
             borderBottom: '1px solid rgb(163,163,163)',
             color: 'rgb(163,163,163)',
           }}
           // aria-label="secondary tabs example"
         >
-          <Tab value="taxi" label="택시" sx={{ width: '16.6%' }} />
-          <Tab value="carpool" label="카풀" sx={{ width: '16.6%' }} />
-          <Tab value="delivery" label="배달" sx={{ width: '16.6%' }} />
-          <Tab value="group purchase" label="공구" sx={{ width: '16.6%' }} />
-          <Tab value="exercise" label="운동" sx={{ width: '16.6%' }} />
-          <Tab value="outsider" label="아싸" sx={{ width: '16.6%' }} />
+          <Tab value="taxi" label="택시" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="carpool" label="카풀" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="delivery" label="배달" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="group purchase" label="공구" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="exercise" label="운동" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="outsider" label="아싸" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
         </Tabs>
       </Box>
     </ThemeProvider>
   );
 }
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: 'rgb(256,256,256)',
+    },
+    secondary: {
+      main: 'rgb(163, 163, 163)',
+    },
+  },
+  typography: {
+    fontFamily: 'Raleway, Arial',
+  },
+});

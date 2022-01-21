@@ -4,45 +4,6 @@ import { styled } from '@material-ui/core/styles';
 import Button from '@mui/material/Button';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const dateStyle = css`
-  width: 90%;
-  color: white;
-  font-size: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 55px;
-`;
-
-const dateStyle__detatil = css`
-  color: white;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: -10px;
-`;
-
-const DateButton__before = styled(Button)({
-  background: 'rgba(255,255,255,0.3)',
-  border: '1px solid  rgba(255,255,255,0.3)',
-  borderRadius: 30,
-  boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
-  color: 'white',
-  height: 48,
-  padding: '30px 25px',
-  fontSize: 25,
-});
-
-const DateButton__after = styled(Button)({
-  border: '1px solid  rgba(255,255,255,0.7)',
-  borderRadius: 30,
-  boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
-  color: 'white',
-  height: 48,
-  padding: '30px 25px',
-  fontSize: 25,
-});
-
 export default function Date() {
   return (
     <div>
@@ -52,8 +13,49 @@ export default function Date() {
         <DateButton__after>다음날</DateButton__after>
       </div>
       <div css={dateStyle__detatil}>
-        <ExpandMoreIcon sx={{ fontSize: '50px' }} />
+        <ExpandMoreIcon sx={{ fontSize: '3vmax' }} />
       </div>
     </div>
   );
 }
+
+const dateStyle = css`
+  width: 90%;
+  color: white;
+  font-size: 2vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2vh;
+`;
+
+const dateStyle__detatil = css`
+  color: white;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-top: -10px;
+`;
+
+const DateButton__before = styled(Button)({
+  background: '#0a09094c',
+  border: '1px solid  rgba(255,255,255,0.3)',
+  borderRadius: 40,
+  boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
+  color: 'white',
+  height: '5vmax',
+  width: '8vmax',
+  padding: '2vmax 0',
+  fontSize: '1.5vmax',
+});
+
+const DateButton__after = styled(Button)({
+  border: '1px solid  rgba(255,255,255,0.7)',
+  borderRadius: 40,
+  boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
+  color: 'white',
+  height: '5vmax',
+  width: '8vmax',
+  padding: '2vmax 0',
+  fontSize: '1.5vmax',
+});
