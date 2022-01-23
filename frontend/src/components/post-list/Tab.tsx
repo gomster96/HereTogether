@@ -15,25 +15,25 @@ export default function TabStyle() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ width: '88%', margin: '0 auto' }}>
+      <Box sx={{ width: '88%', margin: '1em auto' }}>
         <Tabs
           value={value}
           onChange={handleChange}
           textColor="primary"
           indicatorColor="primary"
           sx={{
-            marginTop: '1vh',
-            borderBottom: '1px solid rgb(163,163,163)',
+            marginTop: '1rem',
+            borderBottom: '1.3px solid rgb(163,163,163)',
             color: 'rgb(163,163,163)',
           }}
           // aria-label="secondary tabs example"
         >
-          <Tab value="taxi" label="택시" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
-          <Tab value="carpool" label="카풀" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
-          <Tab value="delivery" label="배달" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
-          <Tab value="group purchase" label="공구" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
-          <Tab value="exercise" label="운동" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
-          <Tab value="outsider" label="아싸" sx={{ width: '16.6vw', fontSize: '1vmax' }} />
+          <Tab value="taxi" label="택시" sx={{ width: '16.6%', fontSize: '2vmax' }} />
+          <Tab value="carpool" label="카풀" sx={{ width: '16.6%', fontSize: '2vmax' }} />
+          <Tab value="delivery" label="배달" sx={{ width: '16.6%', fontSize: '2vmax' }} />
+          <Tab value="group purchase" label="공구" sx={{ width: '16.6%', fontSize: '2vmax' }} />
+          <Tab value="exercise" label="운동" sx={{ width: '16.6%', fontSize: '2vmax' }} />
+          <Tab value="outsider" label="아싸" sx={{ width: '16.6%', fontSize: '2vmax' }} />
         </Tabs>
       </Box>
     </ThemeProvider>

@@ -22,18 +22,18 @@ export default function Date() {
 const dateStyle = css`
   width: 90%;
   color: white;
-  font-size: 2vmax;
+  font-size: 7em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: 2vh;
+  margin-top: 1em;
 `;
 
 const dateStyle__detatil = css`
   color: white;
   text-align: center;
-  margin-bottom: 3vh;
+  margin-bottom: 3em;
   margin-top: -10px;
 `;
 
@@ -43,10 +43,10 @@ const DateButton__before = styled(Button)({
   borderRadius: 40,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-  height: '5vmax',
-  width: '8vmax',
-  padding: '2vmax 0',
-  fontSize: '1.5vmax',
+  height: '3rem',
+  width: '5rem',
+  padding: '5px 0',
+  fontSize: '2rem + 1vmax',
 });
 
 const DateButton__after = styled(Button)({
@@ -54,8 +54,8 @@ const DateButton__after = styled(Button)({
   borderRadius: 40,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-  height: '5vmax',
-  width: '8vmax',
-  padding: '2vmax 0',
-  fontSize: '1.5vmax',
+  height: '3rem',
+  width: '5rem',
+  padding: '5px 0',
+  fontSize: '2rem + 1vmax',
 });

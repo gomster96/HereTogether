@@ -34,9 +34,11 @@ export default function Item(props: { item: ItemType }) {
 }
 
 const listBox = css`
-  width: 92%;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 800px;
   margin: 1.5vh auto;
-  border-radius: 4vw;
+  border-radius: 20px;
   background-color: white;
   box-shadow: rgba(97, 83, 211, 0.5) 3px 3px 8px;
 `;
@@ -46,9 +48,9 @@ const listBox__title = css`
   width: 92%;
   display: flex;
   justify-content: space-between;
-  font-size: 2vmax;
+  font-size: 1rem;
   color: rgb(140, 140, 140);
-  padding: 1vmax 0;
+  padding: 0.5rem 0;
 `;
 
 const listBox__content__underline = css`
@@ -64,7 +66,7 @@ const listBox__location = css`
   width: 92%;
   display: flex;
   align-items: flex-end;
-  font-size: 2.5vmax;
+  font-size: 1rem;
   color: rgb(97, 83, 211);
   font-weight: 550;
   padding: 2vmin 0 0 0;
@@ -77,7 +79,7 @@ const listBox__Location__icon = css`
 
 const listBox__footer = css`
   grid-area: footer;
-  font-size: 1.5vmax;
+  font-size: 0.7rem;
   margin: 0 auto;
   width: 92%;
   display: flex;
@@ -93,8 +95,8 @@ const ListButton = styled(Button)({
   borderRadius: 30,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-  height: '4vmax',
+  height: '1.5em',
 
-  padding: '0 1vmax',
-  fontSize: '2vmax',
+  padding: '0 1em',
+  fontSize: '1rem',
 });
