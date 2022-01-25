@@ -17,7 +17,7 @@ const statebarStyle = css`
   height: 1rem;
   color: white;
   font-size: 10em;
-  font-family: 'night'; //아니 폰트 웨 안 ㅞ ?????
+  font-family: 'localFont'; //여기 해결해야할 문제 !!!
   display: flex;
   justify-content: space-between;
   align-items: center;

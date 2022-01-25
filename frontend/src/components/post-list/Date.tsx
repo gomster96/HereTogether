@@ -1,20 +1,28 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { styled } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ResponsiveDatePicker from './DatePicker';
+import '../../style.css';
 
 export default function Date() {
   return (
     <div>
       <div css={dateStyle}>
-        <DateButton__before>이전날</DateButton__before>
-        <span>2022년 1월 13일 (목)</span>
-        <DateButton__after>다음날</DateButton__after>
+        <Link to={`/writePage`}>
+          <DateButton__before>이전날</DateButton__before>
+        </Link>
+        <ResponsiveDatePicker />
+        {/* <span>2022년 1월 13일 (목)</span> */}
+        <Link to={`/writePage`}>
+          <DateButton__after>다음날</DateButton__after>
+        </Link>
       </div>
-      <div css={dateStyle__detatil}>
+      {/* <div css={dateStyle__detatil}>
         <ExpandMoreIcon sx={{ fontSize: '3vmax' }} />
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -46,7 +54,8 @@ const DateButton__before = styled(Button)({
   height: '3rem',
   width: '5rem',
   padding: '5px 0',
-  fontSize: '2rem + 1vmax',
+  fontSize: ' 2vmax',
+  fontFamily: 'localFont',
 });
 
 const DateButton__after = styled(Button)({
@@ -57,5 +66,6 @@ const DateButton__after = styled(Button)({
   height: '3rem',
   width: '5rem',
   padding: '5px 0',
-  fontSize: '2rem + 1vmax',
+  fontSize: ' 2vmax',
+  fontFamily: 'localFont',
 });

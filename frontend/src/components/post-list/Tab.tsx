@@ -51,6 +51,6 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Raleway, Arial',
+    fontFamily: 'localFont',
   },
 });
