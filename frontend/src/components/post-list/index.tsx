@@ -4,6 +4,7 @@ import Item from './Item';
 import Statebar from './Statebar';
 import Tab from './Tab';
 import Date from './Date';
+// import font from `../../asset/fonts/localFont.ttf`
 
 export default function PostList() {
   return (

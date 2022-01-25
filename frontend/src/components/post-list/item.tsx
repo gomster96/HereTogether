@@ -34,13 +34,13 @@ export default function Item(props: { item: ItemType }) {
 }
 
 const listBox = css`
-  border: 1px solid black;
   width: 100%;
   max-width: 800px;
   margin: 1.5vh auto;
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(97, 83, 211, 0.5) 3px 3px 8px;
+  border: 1px solid rgba(97, 83, 211, 0.3);
 `;
 
 const listBox__title = css`
@@ -48,7 +48,7 @@ const listBox__title = css`
   width: 92%;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(140, 140, 140);
   padding: 0.5rem 0;
 `;
@@ -58,14 +58,12 @@ const listBox__content__underline = css`
   width: 92%;
   border-bottom: 2px solid rgba(97, 83, 211, 0.3);
 `;
-// 'icon start start destination destination'
-// 'icon stLocation stLocation desLocation desLocation'
 
 const listBox__location = css`
   margin: 0 auto;
   width: 92%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   font-size: 1rem;
   color: rgb(97, 83, 211);
   font-weight: 550;

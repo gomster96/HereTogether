@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@mui/material/styles';
+import '../../style.css';
 
 export default function TabStyle() {
   const [value, setValue] = useState('one');
