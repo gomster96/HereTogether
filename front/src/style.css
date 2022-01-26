@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'localFont';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/localFont.ttf') format('truetype');
+  }
+
+  *{
+      font-family: 'localFont';
+  }
