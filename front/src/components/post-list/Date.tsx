@@ -1,8 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { styled } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import Button from '@material-ui/core/Button';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ResponsiveDatePicker from './DatePicker';
 
@@ -43,26 +42,27 @@ const dateStyle = css`
 // `;
 
 const DateButton__before = styled(Button)({
-  background: '#0a09094c',
+  height: '2.5rem',
+  width: '5rem',
+  padding: '5px 0',
+  background: '#40325a4c',
   border: '1px solid  rgba(255,255,255,0.3)',
   borderRadius: 40,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-  height: '3rem',
-  width: '5rem',
-  padding: '5px 0',
-  fontSize: ' 1rem',
+
+  fontSize: ' 0.8rem',
   fontFamily: 'localFont',
 });
 
 const DateButton__after = styled(Button)({
+  height: '2.5rem',
+  width: '5rem',
+  padding: '5px 0',
   border: '1px solid  rgba(255,255,255,0.7)',
   borderRadius: 40,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-  height: '3rem',
-  width: '5rem',
-  padding: '5px 0',
-  fontSize: ' 1rem',
+  fontSize: ' 0.8rem',
   fontFamily: 'localFont',
 });

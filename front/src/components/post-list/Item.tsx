@@ -5,8 +5,11 @@ import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 export default function Item(props: { item: ItemType }) {
+  function handleClick(e: any) {
+    window.location.href = '/chatPage';
+  }
   return (
-    <div css={listBox}>
+    <div css={listBox} onClick={handleClick}>
       <div css={listBox__title}>
         <div>{props.item.title}</div>
         <div>{props.item.time}</div>
@@ -51,6 +54,7 @@ const listBox__title = css`
   font-size: 0.8rem;
   color: rgb(140, 140, 140);
   padding: 0.5rem 0;
+  font-weight: border;
 `;
 
 const listBox__content__underline = css`
@@ -77,7 +81,7 @@ const listBox__Location__icon = css`
 
 const listBox__footer = css`
   grid-area: footer;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   margin: 0 auto;
   width: 92%;
   display: flex;
@@ -89,12 +93,12 @@ const listBox__footer = css`
 
 const ListButton = styled(Button)({
   background: 'linear-gradient(45deg, rgb(97,83,211)30%, rgb(174,128,245)90%)',
-  border: 0,
+
   borderRadius: 30,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
   height: '1.5em',
-
-  padding: '0 1em',
+  width: '1rem',
+  padding: '0 1rem',
   fontSize: '1rem',
 });

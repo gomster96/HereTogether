@@ -24,6 +24,5 @@ const statebarStyle = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  font-family: 'localFont'; //여기 해결해야할 문제 !!!
+  color: rgba(255, 255, 255, 0.8);
 `;
