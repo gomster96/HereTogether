@@ -13,6 +13,16 @@
 
 ## 기술스택
 
+| division        | stack                                                                                                                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Web             | ![socket.io](https://img.shields.io/badge/socket.io-lightgray?logo=socket.io&colorA=gray) ![](<http://img.shields.io/badge/-SSE-3776AB()?style=()>)                                                        |
+| Front-end       | ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=TypeScript&colorA=gray) ![React](https://img.shields.io/badge/React-lightblue?logo=React&colorA=gray) ![](https://i.imgur.com/0l2c3Fe.png) |
+| Back-end        | Spring                                                                                                                                                                                                     |
+| Production      | ![NGINX](https://img.shields.io/badge/NGINX-green?logo=NginX&colorA=gray) ![Git](https://img.shields.io/badge/GitHub_Actions-purple?logo=github&colorA=gray)                                               |
+| Code Management | ![Git](https://img.shields.io/badge/Git-red?logo=Git&colorA=gray) ![github](https://img.shields.io/badge/GitHub-lightgray?logo=github&colorA=gray)                                                         |
+| Formatting      | ![prettier](https://img.shields.io/badge/prettier-yellow?logo=prettier&colorA=gray)                                                                                                                        |
+| DB              | ![mysql](https://img.shields.io/badge/mysql-blue?logo=mySQL&colorA=gray)                                                                                                                                   |
+
 ## 기획서
 
 ## 백로그
