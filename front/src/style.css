@@ -1,0 +1,85 @@
+
+@font-face {
+    /* 1 */
+    font-family: 'dream1';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream1.otf') format('truetype');
+  }
+
+  @font-face {
+    /* 2 */      
+    font-family: 'dream2';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream2.otf') format('truetype');
+  }
+
+  @font-face {
+    /* 3 */
+    font-family: 'dream3';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream3.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 4 */
+    font-family: 'dream4';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream4.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 5 */
+    font-family: 'dream5';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream5.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 6 */
+    font-family: 'dream6';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream6.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 7 */
+    font-family: 'dream7';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream7.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 8 */
+    font-family: 'dream8';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream8.otf') format('truetype');
+  }
+
+  @font-face {
+  /* 9 */
+    font-family: 'dream9';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/SCDream9.otf') format('truetype');
+  }
+
+
+  @font-face {
+  /* 귀염 */
+    font-family: 'localFont';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./asset/fonts/localFont.ttf') format('truetype');
+  }
+  *{
+
+    font-family: 'dream4';
+  }
