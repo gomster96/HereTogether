@@ -25,4 +25,6 @@
 
 ## 기획서
 
+[스토리보드 슬라이드](https://docs.google.com/presentation/d/1yWrE9XcvDe4gk9pk2wLZqr2yU29_-ouZtMgAGurXHpc/edit?usp=sharing)
+
 ## 백로그
