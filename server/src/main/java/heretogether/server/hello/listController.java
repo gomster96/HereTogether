@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class listController {
     @GetMapping("/")
     public String welcome(){
-        return "The server is running well.";
+        return "Server Connected : Test Finish";
     }
 }
