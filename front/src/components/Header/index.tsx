@@ -1,14 +1,20 @@
+/* eslint-disable no-restricted-globals */
 import React from 'react';
 import { css } from '@emotion/react';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowBackIcon from '@mui/icons-material/ArrowBackIosNew';
 
-export default function Statebar() {
+export default function Header() {
   function handleClick(e: any) {
     window.location.href = '/';
   }
   return (
     <div css={statebarStyle}>
-      <ArrowBackIosNewIcon onClick={handleClick} sx={{ fontSize: '3vmax' }} />
+      <ArrowBackIcon
+        onClick={() => {
+          history.back();
+        }}
+        sx={{ fontSize: '3vmax' }}
+      />
       <span>HereTogether</span>
       <span> o </span>
     </div>

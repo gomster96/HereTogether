@@ -19,10 +19,9 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default function ResponsiveDatePickers() {
+export default function DatePicker() {
   const [value, setValue] = React.useState<Date | null>(new Date());
   const classes = useStyles();
-  const color = 'ffffff';
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>

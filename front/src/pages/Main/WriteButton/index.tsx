@@ -1,20 +1,26 @@
+// withRouter는 라우터 컴포넌트가 아닌 곳에서 match, location, history를 props로 받아와서 사용하게 해줍니다.
 import React from 'react';
 import { css } from '@emotion/react';
 import { styled } from '@material-ui/core/styles';
 import EditIcon from '@mui/icons-material/Edit';
 import Button from '@mui/material/Button';
+import { Route, Link, useHistory } from 'react-router-dom';
 
 export default function WriteIcon() {
-  function handleClick(e: any) {
-    window.location.href = '/WritePage';
-  }
+  const history = useHistory();
+
+  const moveWrite = () => {
+    history.push('/write');
+  };
+
   return (
-    <WriteButton onClick={handleClick}>
+    // <Link to="/write">
+    <WriteButton onClick={moveWrite}>
       <Icon />
     </WriteButton>
+    // </Link>
   );
 }
-
 const WriteButton = styled(Button)({
   right: 0,
   bottom: 0,

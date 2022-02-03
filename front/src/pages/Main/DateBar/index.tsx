@@ -3,17 +3,17 @@ import { css } from '@emotion/react';
 import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ResponsiveDatePicker from './DatePicker';
+import DatePicker from './DatePicker';
 
-export default function Date() {
+export default function DateBar() {
   function handleClick(e: any) {
-    window.location.href = '/writePage';
+    window.location.href = '/write';
   }
   return (
     <div>
       <div css={dateStyle}>
         <DateButton__before onClick={handleClick}>이전날</DateButton__before>
-        <ResponsiveDatePicker />
+        <DatePicker />
         <DateButton__after onClick={handleClick}>다음날</DateButton__after>
       </div>
       {/* <div css={dateStyle__detatil}>
