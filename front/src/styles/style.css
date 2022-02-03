@@ -7,13 +7,7 @@
     src: url('../asset/fonts/SCDream1.otf') format('truetype');
   }
 
-  @font-face {
-    /* 3 */
-    font-family: 'dream3';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../asset/fonts/SCDream3.otf') format('truetype');
-  }
+
 
   @font-face {
   /* 4 */
