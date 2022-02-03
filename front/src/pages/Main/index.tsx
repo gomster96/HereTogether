@@ -1,26 +1,26 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import Statebar from './Statebar';
+import Header from '../../components/Header';
 import Tab from './Tab';
-import Date from './Date';
-import List from './List';
-import WriteIcon from './WriteIcon';
-import RefreshIcon from './RefreshIcon';
-import img from '../../asset/images/background.png';
+import DateBar from './DateBar';
+import WriteButton from './WriteButton';
+import RefreshButton from './RefreshButton';
+import backgroundImage from '../../asset/images/background.png';
+import PostList from '../Main/PostList';
 
-export default function PostList() {
+export default function Main() {
   return (
     <div css={background}>
       <div css={empty}>
-        <RefreshIcon />
+        <RefreshButton />
       </div>
-      <List />
+      <PostList />
       <div css={background__header}>
-        <Statebar />
+        <Header />
         <Tab />
-        <Date />
+        <DateBar />
       </div>
-      <WriteIcon />
+      <WriteButton />
     </div>
   );
 }
@@ -30,10 +30,10 @@ const background = css`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(${img});
+  background-image: url(${backgroundImage});
   background-size: 100vw 100vh;
   height: 100%;
-  weight: 100%;
+  width: 100%;
   position: absolute;
   overflow: auto;
 `;
@@ -43,7 +43,7 @@ const background__header = css`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(${img});
+  background-image: url(${backgroundImage});
   position: fixed;
   background-size: 100vw 100vh;
   height: fit-content;
@@ -52,5 +52,3 @@ const background__header = css`
 const empty = css`
   margin-top: 27vh;
 `;
-
-const iconFix = css``;

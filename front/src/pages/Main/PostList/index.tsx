@@ -1,18 +1,18 @@
 import React from 'react';
-import Item from './Item';
+import Post from './Post';
 import { css } from '@emotion/react';
 
-export default function List() {
+export default function PostList() {
   return (
-    <div css={listPage}>
-      {data.map((item) => (
-        <Item item={item} />
+    <div css={postPage}>
+      {data.map((post) => (
+        <Post item={post} />
       ))}
     </div>
   );
 }
 
-const listPage = css`
+const postPage = css`
   width: 80vw;
   height: auto;
   margin: -10px auto;

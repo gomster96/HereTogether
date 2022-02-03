@@ -3,11 +3,10 @@ import { css } from '@emotion/react';
 import { styled } from '@material-ui/core/styles';
 import Button from '@mui/material/Button';
 import img from '../../asset/images/background.png';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function InitialPage() {
   function handleClick(e: any) {
-    window.location.href = '/mainPage';
+    window.location.href = '/main';
   }
   return (
     <div css={background}>

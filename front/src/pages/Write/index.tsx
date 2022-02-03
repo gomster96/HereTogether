@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import img from '../../asset/images/background.png';
-import Statebar from '../post-list/Statebar';
+import Statebar from '../../components/Header';
 
 export default function WritePage() {
   return (

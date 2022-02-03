@@ -1,12 +1,12 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import img from '../../asset/images/background.png';
-import Statebar from '../post-list/Statebar';
+import Header from '../../components/Header';
 
 export default function ChatPage() {
   return (
     <div css={background}>
-      <Statebar />
+      <Header />
     </div>
   );
 }

@@ -1,42 +1,42 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { ItemType } from '../../type';
+import { ItemType } from '../../../type';
 import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-export default function Item(props: { item: ItemType }) {
+export default function Post(props: { item: ItemType }) {
   function handleClick(e: any) {
     window.location.href = '/chatPage';
   }
   return (
-    <div css={listBox} onClick={handleClick}>
-      <div css={listBox__title}>
+    <div css={postBox} onClick={handleClick}>
+      <div css={postBox__title}>
         <div>{props.item.title}</div>
         <div>{props.item.time}</div>
       </div>
-      <div css={listBox__content__underline}></div>
-      <div css={listBox__location}>
+      <div css={postBox__content__underline}></div>
+      <div css={postBox__location}>
         <img
           src="https://user-images.githubusercontent.com/84161508/150567628-98def1bb-0b38-46f1-a272-e1852446412b.png"
           alt="point"
-          css={listBox__Location__icon}
+          css={postBox__Location__icon}
         />
 
         <div>{props.item.start}</div>
         <span>→</span>
         <div>{props.item.destination}</div>
       </div>
-      <div css={listBox__footer}>
+      <div css={postBox__footer}>
         <div>{props.item.content}</div>
-        <ListButton>
+        {/* <listButton>
           {props.item.participant}/{props.item.totalPeople}
-        </ListButton>
+        </listButton> */}
       </div>
     </div>
   );
 }
 
-const listBox = css`
+const postBox = css`
   width: 100%;
   max-width: 800px;
   margin: 1.5vh auto;
@@ -46,7 +46,7 @@ const listBox = css`
   border: 1px solid rgba(97, 83, 211, 0.3);
 `;
 
-const listBox__title = css`
+const postBox__title = css`
   margin: 0 auto;
   width: 92%;
   display: flex;
@@ -57,13 +57,13 @@ const listBox__title = css`
   font-weight: border;
 `;
 
-const listBox__content__underline = css`
+const postBox__content__underline = css`
   margin: 0 auto;
   width: 92%;
   border-bottom: 2px solid rgba(97, 83, 211, 0.3);
 `;
 
-const listBox__location = css`
+const postBox__location = css`
   margin: 0 auto;
   width: 92%;
   display: flex;
@@ -74,12 +74,12 @@ const listBox__location = css`
   padding: 2vmin 0 0 0;
 `;
 
-const listBox__Location__icon = css`
+const postBox__Location__icon = css`
   width: 2vmax;
   padding-right: 3vw;
 `;
 
-const listBox__footer = css`
+const postBox__footer = css`
   grid-area: footer;
   font-size: 0.5rem;
   margin: 0 auto;
@@ -91,7 +91,7 @@ const listBox__footer = css`
   padding: 1vmax 0;
 `;
 
-const ListButton = styled(Button)({
+const listButton = styled(Button)({
   background: 'linear-gradient(45deg, rgb(97,83,211)30%, rgb(174,128,245)90%)',
 
   borderRadius: 30,
