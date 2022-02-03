@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { css } from '@emotion/react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -22,6 +22,7 @@ export default function TabStyle() {
           textColor="primary"
           indicatorColor="primary"
           sx={{
+            width: '100%',
             marginTop: '1rem',
             borderBottom: '1.3px solid rgb(163,163,163)',
             color: 'rgb(163,163,163)',
@@ -39,6 +40,11 @@ export default function TabStyle() {
     </ThemeProvider>
   );
 }
+
+// const tabStyle = { 이게 되는게 아니라, 그냥 안먹는 거였음!
+//   width: '16.6%',
+//   fontSize: '2vmax',
+// };
 
 const theme = createTheme({
   palette: {
