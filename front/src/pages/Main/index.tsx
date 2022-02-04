@@ -50,5 +50,5 @@ const background__header = css`
 `;
 
 const empty = css`
-  margin-top: 27vh;
+  margin-top: 28.5vh;
 `;

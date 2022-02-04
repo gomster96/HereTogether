@@ -6,7 +6,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Button from '@mui/material/Button';
 import { Route, Link, useHistory } from 'react-router-dom';
 
-export default function WriteIcon() {
+export default function WriteButton() {
   const history = useHistory();
 
   const moveWrite = () => {
@@ -15,13 +15,13 @@ export default function WriteIcon() {
 
   return (
     // <Link to="/write">
-    <WriteButton onClick={moveWrite}>
+    <WriteStyledButton onClick={moveWrite}>
       <Icon />
-    </WriteButton>
+    </WriteStyledButton>
     // </Link>
   );
 }
-const WriteButton = styled(Button)({
+const WriteStyledButton = styled(Button)({
   right: 0,
   bottom: 0,
   position: 'fixed',
