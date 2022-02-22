@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
@@ -22,8 +23,18 @@ public class PostRepository {
 
     public Post findOne(Long id){ return em.find(Post.class, id);}
 
-    public List<Post> findAllByDate(){
-        return em.createQuery("select p from Post p", Post.class)
+    public List<Post> findAllByDate(String date){
+        int Year = Integer.parseInt(date.substring(0,4));
+        int Month = Integer.parseInt(date.substring(4,6));
+        int day = Integer.parseInt(date.substring(6));
+
+        LocalDateTime startDate = LocalDateTime.of(Year, Month, day, 0, 0);
+        LocalDateTime endDate = LocalDateTime.of(Year, Month, day, 23, 59);
+        return em.createQuery("select p from Post p where p.deadline " +
+                "between :startDate And :endDate", Post.class)
+                .setParameter("startDate", startDate)
+                .setParameter("endDate", endDate)
                 .getResultList();
+
     }
 }
