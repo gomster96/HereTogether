@@ -11,7 +11,7 @@ export default function TabStyle() {
   const [value, setValue] = useState('one');
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
-    console.log(value);
+    console.log(newValue);
   };
 
   const [activeIndex, setActiveIndex] = useState(0);
