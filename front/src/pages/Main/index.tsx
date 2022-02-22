@@ -7,6 +7,7 @@ import WriteButton from './WriteButton';
 import RefreshButton from './RefreshButton';
 import backgroundImage from '../../asset/images/background.png';
 import PostList from '../Main/PostList';
+import Test from '../Main/useTabTest';
 
 export default function Main() {
   return (
@@ -21,6 +22,7 @@ export default function Main() {
         <DateBar />
       </div>
       <WriteButton />
+      <Test />
     </div>
   );
 }
@@ -50,5 +52,5 @@ const background__header = css`
 `;
 
 const empty = css`
-  margin-top: 27vh;
+  margin-top: 28.5vh;
 `;

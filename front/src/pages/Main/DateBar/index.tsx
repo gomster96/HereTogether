@@ -12,13 +12,14 @@ export default function DateBar() {
   return (
     <div>
       <div css={dateStyle}>
-        <DateButton__before onClick={handleClick}>이전날</DateButton__before>
+        <Button style={beforeDateStyle} onClick={handleClick}>
+          이전날
+        </Button>
         <DatePicker />
-        <DateButton__after onClick={handleClick}>다음날</DateButton__after>
+        <Button style={afterDateStyle} onClick={handleClick}>
+          다음날
+        </Button>
       </div>
-      {/* <div css={dateStyle__detatil}>
-          <ExpandMoreIcon sx={{ fontSize: '3vmax' }} />
-        </div> */}
     </div>
   );
 }
@@ -34,14 +35,7 @@ const dateStyle = css`
   margin-top: 1rem;
 `;
 
-// const dateStyle__detatil = css`
-//   color: white;
-//   text-align: center;
-//   margin-bottom: 3em;
-//   margin-top: -10px;
-// `;
-
-const DateButton__before = styled(Button)({
+const beforeDateStyle = {
   height: '2.5rem',
   width: '5rem',
   padding: '5px 0',
@@ -50,12 +44,11 @@ const DateButton__before = styled(Button)({
   borderRadius: 40,
   boxShadow: '0 3px 5px 2px rgba(97,83,211, 0.3)',
   color: 'white',
-
   fontSize: ' 0.8rem',
   fontFamily: 'localFont',
-});
+};
 
-const DateButton__after = styled(Button)({
+const afterDateStyle = {
   height: '2.5rem',
   width: '5rem',
   padding: '5px 0',
@@ -65,4 +58,4 @@ const DateButton__after = styled(Button)({
   color: 'white',
   fontSize: ' 0.8rem',
   fontFamily: 'localFont',
-});
+};

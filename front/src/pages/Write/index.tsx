@@ -1,12 +1,12 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import img from '../../asset/images/background.png';
-import Statebar from '../../components/Header';
+import backgroundImage from '../../asset/images/background.png';
+import Header from '../../components/Header';
 
 export default function WritePage() {
   return (
     <div css={background}>
-      <Statebar />
+      <Header />
     </div>
   );
 }
@@ -16,10 +16,10 @@ const background = css`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(${img});
+  background-image: url(${backgroundImage});
   background-size: 100vw 100vh;
   height: 100%;
-  weight: 100%;
+  width: 100%;
   position: absolute;
   overflow: auto;
 `;

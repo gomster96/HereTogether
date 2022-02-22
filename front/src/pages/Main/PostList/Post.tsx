@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 export default function Post(props: { item: ItemType }) {
   function handleClick(e: any) {
-    window.location.href = '/chatPage';
+    window.location.href = '/chat';
   }
   return (
     <div css={postBox} onClick={handleClick}>
