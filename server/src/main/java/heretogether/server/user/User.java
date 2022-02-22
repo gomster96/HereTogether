@@ -1,6 +1,5 @@
 package heretogether.server.user;
 
-import heretogether.server.domain.UnivCode;
 import lombok.Getter;
 import lombok.Setter;
 
