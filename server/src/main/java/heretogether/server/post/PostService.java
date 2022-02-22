@@ -18,8 +18,8 @@ public class PostService {
         return post.getId();
     }
 
-    public List<Post> findPostsByDate(String date){
-        return postRepository.findAllByDate(date);
+    public List<Post> findPostsByDate(String dType,String date){
+        return postRepository.findAllByDate(dType ,date);
     }
     public Post findOne(Long postId){
         return postRepository.findOne(postId);

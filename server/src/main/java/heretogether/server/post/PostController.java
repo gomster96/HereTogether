@@ -1,10 +1,7 @@
 package heretogether.server.post;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -13,12 +10,14 @@ import java.util.List;
 public class PostController {
     private final PostService postService;
 
+    // taxi, car, delivery, purchase, exercise 마다 하나씩 만들기
+
     @GetMapping("/posts")
     public List<Post> getPostByDate(
+            @RequestParam(value="type") String dType,
             @RequestParam(value="date")String date //20220223 이런 꼴로 받을 예정
     ){
-
-        return postService.findPostsByDate(date);
+        return postService.findPostsByDate(dType,date);
     }
 
 

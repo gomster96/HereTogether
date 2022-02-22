@@ -23,15 +23,15 @@ public class PostRepository {
 
     public Post findOne(Long id){ return em.find(Post.class, id);}
 
-    public List<Post> findAllByDate(String date){
+    public List<Post> findAllByDate(String dTypeClassName, String date){
         int Year = Integer.parseInt(date.substring(0,4));
         int Month = Integer.parseInt(date.substring(4,6));
         int day = Integer.parseInt(date.substring(6));
 
         LocalDateTime startDate = LocalDateTime.of(Year, Month, day, 0, 0);
         LocalDateTime endDate = LocalDateTime.of(Year, Month, day, 23, 59);
-        return em.createQuery("select p from Post p where p.deadline " +
-                "between :startDate And :endDate", Post.class)
+        return em.createQuery("select p from " + dTypeClassName + " p where p.deadline " +
+                "between :startDate And :endDate ", Post.class)
                 .setParameter("startDate", startDate)
                 .setParameter("endDate", endDate)
                 .getResultList();
