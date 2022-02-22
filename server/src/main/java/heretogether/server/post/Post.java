@@ -1,6 +1,6 @@
 package heretogether.server.post;
 
-import heretogether.server.domain.User;
+import heretogether.server.user.User;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +10,8 @@ import static javax.persistence.FetchType.*;
 
 @Entity
 @Getter @Setter
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "dtype")
 public abstract class Post {
     @Id
     @GeneratedValue
