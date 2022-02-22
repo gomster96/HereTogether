@@ -1,4 +1,28 @@
 package heretogether.server.post;
 
-public class Post {
+import heretogether.server.domain.User;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import static javax.persistence.FetchType.*;
+
+@Entity
+@Getter @Setter
+public abstract class Post {
+    @Id
+    @GeneratedValue
+    @Column(name = "post_id")
+    private Long id;
+
+    private String title;
+    private String content;
+    private LocalDateTime created_at;
+    private LocalDateTime deadline;
+    private int capacity;
+
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 }
